@@ -15,11 +15,11 @@ services:
       - loki
 
   stock-app:
-    build:
-      context: .
-      dockerfile: stock-app/Dockerfile
-    # image: rr1docker1/stock-app:latest
-    image: stock-app:latest
+    #build:
+    #  context: .
+    #  dockerfile: stock-app/Dockerfile
+    image: rr1docker1/mid_project_stock_app:latest
+    # image: stock-app:latest
     ports:
       - "5001:5001"
       - "8000:8000"
